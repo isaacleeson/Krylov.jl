@@ -87,7 +87,7 @@ See [`CrSolver`](@ref) for more details about the `solver`.
 function cr! end
 
 def_args_cr = (:(A                    ),
-               :(b::Union{ITensor,AbstractVector{FC}}x))
+               :(b::Union{ITensor,AbstractVector{FC}}))
 
 def_optargs_cr = (:(x0::AbstractVector),)
 
