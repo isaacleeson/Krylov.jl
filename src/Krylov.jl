@@ -1,6 +1,7 @@
 module Krylov
 
 using LinearAlgebra, SparseArrays, Printf
+import ITensors.ITensor
 
 include("krylov_stats.jl")
 
