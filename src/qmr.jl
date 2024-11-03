@@ -17,7 +17,7 @@
 #
 # Alexis Montoison, <alexis.montoison@polymtl.ca>
 # Montreal, May 2019.
-
+import ITensors: ITensor
 export qmr, qmr!
 
 """
@@ -88,7 +88,7 @@ See [`QmrSolver`](@ref) for more details about the `solver`.
 function qmr! end
 
 def_args_qmr = (:(A                    ),
-                :(b::AbstractVector{FC}))
+                :(b::Union{AbstractVector{FC},ITensor}))
 
 def_optargs_qmr = (:(x0::AbstractVector),)
 
