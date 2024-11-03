@@ -102,7 +102,7 @@ See [`MinresSolver`](@ref) for more details about the `solver`.
 function minres! end
 
 def_args_minres = (:(A                    ),
-                   :(b::Union{AbstractVector{FC},ITensor}x))
+                   :(b::Union{AbstractVector{FC},ITensor}))
 
 def_optargs_minres = (:(x0::AbstractVector),)
 
