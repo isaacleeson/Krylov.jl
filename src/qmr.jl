@@ -17,7 +17,6 @@
 #
 # Alexis Montoison, <alexis.montoison@polymtl.ca>
 # Montreal, May 2019.
-import ITensors: ITensor
 export qmr, qmr!
 
 """
