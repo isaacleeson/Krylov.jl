@@ -85,7 +85,7 @@ See [`DqgmresSolver`](@ref) for more details about the `solver`.
 function dqgmres! end
 
 def_args_dqgmres = (:(A                    ),
-                    :(b::AbstractVector{FC}))
+                    :(b::Union{ITensor,AbstractVector{FC}}))
 
 def_optargs_dqgmres = (:(x0::AbstractVector),)
 

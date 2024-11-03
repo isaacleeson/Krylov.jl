@@ -74,7 +74,7 @@ See [`CarSolver`](@ref) for more details about the `solver`.
 function car! end
 
 def_args_car = (:(A                    ),
-                :(b::AbstractVector{FC}))
+                :(b::Union{AbstractVector{FC},ITensor}))
 
 def_optargs_car = (:(x0::AbstractVector),)
 

@@ -137,7 +137,7 @@ See [`CraigSolver`](@ref) for more details about the `solver`.
 function craig! end
 
 def_args_craig = (:(A                    ),
-                  :(b::AbstractVector{FC}))
+                  :(b::Union{AbstractVector{FC},ITensor}))
 
 def_kwargs_craig = (:(; M = I                         ),
                     :(; N = I                         ),

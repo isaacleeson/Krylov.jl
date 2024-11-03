@@ -102,7 +102,7 @@ See [`CgneSolver`](@ref) for more details about the `solver`.
 function cgne! end
 
 def_args_cgne = (:(A                    ),
-                 :(b::AbstractVector{FC}))
+                 :(b::Union{AbstractVector{FC},ITensor}))
 
 def_kwargs_cgne = (:(; N = I                     ),
                    :(; ldiv::Bool = false        ),

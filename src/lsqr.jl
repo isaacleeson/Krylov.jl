@@ -128,7 +128,7 @@ See [`LsqrSolver`](@ref) for more details about the `solver`.
 function lsqr! end
 
 def_args_lsqr = (:(A                    ),
-                 :(b::AbstractVector{FC}))
+                 :(b::Union{AbstractVector{FC},ITensor}))
 
 def_kwargs_lsqr = (:(; M = I                     ),
                    :(; N = I                     ),

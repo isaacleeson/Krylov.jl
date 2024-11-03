@@ -78,7 +78,7 @@ See [`CgLanczosSolver`](@ref) for more details about the `solver`.
 function cg_lanczos! end
 
 def_args_cg_lanczos = (:(A                    ),
-                       :(b::AbstractVector{FC}))
+                       :(b::Union{AbstractVector{FC},ITensor}))
 
 def_optargs_cg_lanczos = (:(x0::AbstractVector),)
 

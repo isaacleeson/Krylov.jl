@@ -127,7 +127,7 @@ See [`CraigmrSolver`](@ref) for more details about the `solver`.
 function craigmr! end
 
 def_args_craigmr = (:(A                    ),
-                    :(b::AbstractVector{FC}))
+                    :(b::Union{ITensor,AbstractVector{FC}}))
 
 def_kwargs_craigmr = (:(; M = I                     ),
                       :(; N = I                     ),

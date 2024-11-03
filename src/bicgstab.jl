@@ -89,7 +89,7 @@ See [`BicgstabSolver`](@ref) for more details about the `solver`.
 function bicgstab! end
 
 def_args_bicgstab = (:(A                    ),
-                     :(b::AbstractVector{FC}))
+                     :(b::Union{AbstractVector{FC},ITensor}))
 
 def_optargs_bicgstab = (:(x0::AbstractVector),)
 
